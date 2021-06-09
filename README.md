@@ -7,3 +7,9 @@ This repository has automated tests *e2e* and *API*, using the **cypress** frame
 Este repositório contém a criação de testes automatizados dos tipos *e2e* e *API*, utilizando o framework **cypress**. Os códigos aqui compartilhados são um processo de estudo sobre cypress, sugestões e colaborações serão bem-vindas 👍.
 
 ---
+## Documentação  
+### Visão geral
+## Instalação do ambiente
+## Descrição dos testcases
+### Suite de testes e2e  
+### Suite de testes API
