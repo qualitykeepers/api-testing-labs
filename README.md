@@ -9,7 +9,20 @@ Este repositório contém a criação de testes automatizados dos tipos *e2e* e 
 ---
 ## Documentação  
 ### Visão geral
-## Instalação do ambiente
+## Instalação do ambiente de teste
+
+## Funcionalidades Site SeuBarriga
+https://seubarriga.wcaquino.me/
+
+### Registro de usuário
+### Login
+### Alterar Registro / Conta
+### Inserir Registro / Conta Repetida
+### Movimentação
+### Remover Movimentação
+### Cálculos de Saldo
+
+## Funcionalidades da API ServeRest
 ## Descrição dos testcases
 ### Suite de testes e2e  
 ### Suite de testes API
