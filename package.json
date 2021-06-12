@@ -1,0 +1,31 @@
+{
+  "name": "w-automation-challenge",
+  "version": "1.0.0",
+  "description": "🇬🇧 🇺🇸 This repository has automated tests *e2e* and *API*, using the **cypress** framework. The codes shared here are a process of study, suggestions and collaborations are welcome 😄.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "cypress": "^7.5.0",
+    "cypress-xpath": "^1.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "node_modules/.bin/cypress open "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1freitas/w-automation-challenge.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Luana de Freitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1freitas/w-automation-challenge/issues"
+  },
+  "homepage": "https://github.com/1freitas/w-automation-challenge#readme"
+}

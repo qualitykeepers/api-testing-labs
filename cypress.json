@@ -1,0 +1,8 @@
+{
+    "baseUrlSeuBarriga": "https://seubarriga.wcaquino.me/",
+    "baseUrlServeRest" : "http://localhost:3000",
+    "projectId": "7s5okt",
+    "integrationFolder": "cypress/tests",
+    "viewportHeight": 1000,
+    "viewportWidth": 1280
+}
