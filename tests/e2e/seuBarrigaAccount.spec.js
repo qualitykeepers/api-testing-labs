@@ -11,6 +11,11 @@ describe('Scenario 3 - Create Account ', function() {
         cy.get('#senha').type("llf") // passCorrect
         cy.get('body > div.jumbotron.col-lg-4 > form > button').click('bottom')        
       })
+      
+    afterEach(function () {
+        // logout
+        cy.contains('Sair').click('bottom')  
+    })
 
      it('Cypress Test Case : Create Account random data', function () {
         cy.get('.dropdown-toggle').click('bottom') 
@@ -24,6 +29,7 @@ describe('Scenario 3 - Create Account ', function() {
         cy.get('#tabelaContas')
             .find('tbody tr')
             .should('contain', this.data.seubarriga.accountName)
+        cy.screenshot() 
     })
     it('Cypress Test Case : Create Account random data - duplicity', function () {
         cy.get('.dropdown-toggle').click('bottom') 
@@ -33,7 +39,8 @@ describe('Scenario 3 - Create Account ', function() {
         cy.get('.alert')
             .should('be.visible')
             .should('contain', 'Já existe uma conta com esse nome!')
-            .should('be.visible')               
+            .should('be.visible')
+        cy.screenshot()                
     })
 
 })

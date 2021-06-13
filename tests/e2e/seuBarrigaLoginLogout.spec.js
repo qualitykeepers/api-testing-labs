@@ -14,6 +14,7 @@ describe('Scenario 2 - Login Incorrect ', function() {
   afterEach( function (){
     cy.get('body > div.jumbotron.col-lg-4 > form > button').click('bottom')      
     cy.get('.alert').should('contain', 'Problemas com o login')
+    cy.screenshot() 
   })
 
   it('Cypress Test Case : Fail Login : Email Invalid ', function () {
@@ -32,12 +33,32 @@ describe('Scenario 2 - Login Incorrect ', function() {
 })
 
   it('Cypress Test Case : Fail Login : Email and Password Invalid ', function () {
-      //Provide the data read from the fixture
-    
+      //Provide the data read from the fixture    
       cy.get('#email').type(this.data.seubarriga.emailInvalid)
       cy.get('#senha').type(this.data.seubarriga.passIncorrect)
     
   })
+
+})
+
+describe('Scenario 2.4 - Login Obrigatorio Validator ', function() {
+
+  before(function () {
+    cy.fixture('exampleSeuBarriga').then(function (data) {
+      this.data = data;
+    })
+    cy.visit('/');
+    cy.get('#bs-example-navbar-collapse-1 > ul > li.active > a').click('bottom')
+    cy.get('.active > a').click('bottom')
+  })
+
+  it('Cypress Test Case : Login : Email and Password Corrects ', function () {
+    cy.get('body > div.jumbotron.col-lg-4 > form > button').click('bottom')      
+    cy.get('.alert').should('contain', 'Email é um campo obriga')
+    cy.get('.alert').should('contain', 'Senha é um campo obriga')
+    cy.screenshot() 
+  })
+
 })
 
 describe('Scenario 2.1 - Login Correct ', function() {
@@ -46,16 +67,19 @@ describe('Scenario 2.1 - Login Correct ', function() {
     cy.fixture('exampleSeuBarriga').then(function (data) {
       this.data = data;
     })
+    cy.visit('/');
+    cy.get('#bs-example-navbar-collapse-1 > ul > li.active > a').click('bottom')
+    cy.get('.active > a').click('bottom')
   })
 
   after( function (){
     cy.get('body > div.jumbotron.col-lg-4 > form > button').click('bottom')      
-    cy.contains('Bem vindo').should('be.visible') 
+    cy.contains('Bem vindo').should('be.visible')
+    cy.screenshot()  
   })
 
   it('Cypress Test Case : Login : Email and Password Corrects ', function () {
       //Provide the data read from the fixture
-  
       cy.get('#email').type(this.data.seubarriga.emailfixe)
       cy.get('#senha').type(this.data.seubarriga.passfixe)
       
