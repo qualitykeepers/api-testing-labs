@@ -7,13 +7,15 @@ var faker = require('faker');
 
 var randUserName = faker.internet.userName();
 var randName = faker.name.findName();
-var randEmail = faker.internet.email();
+var randEmailValid = faker.internet.email();
+var randEmailInvalid = faker.internet.email()+ ".qa";
 // var randPass = faker.internet.password(12, true, "", "bah_2021"); 
 var randPass = faker.internet.password();
-var randValueInteger = faker.random.number();
-var randValueFloat = faker.random.float();
-var randPayed = faker.random.boolean();
-var randMovType = faker.random.boolean();
+var randPass2 = faker.internet.password();
+var randValueInteger = faker.datatype.number();
+var randValueFloat = faker.datatype.float();
+var randPayed = faker.datatype.boolean();
+var randMovType = faker.datatype.boolean();
 var randAccountDescription = faker.finance.accountName();
 var randPerson = [faker.name.findName(), faker.name.findName(),faker.name.findName()] ;
 
@@ -56,16 +58,23 @@ const randDate = function ( isValid){
     }else {        
         dateFormated = dateFormatted(randDate, false);
     }
+    console.log(`o que houve? ${todayFormated},${randDate}`)
     return dateFormated 
 }
+
+
 
 // Prepares data to be written in json format
 let seubarriga = {
     seubarriga: {
         name: randName,
         userName: randUserName,
-        pass: randPass,
-        email: randEmail,
+        passfixe: "llf",
+        passIncorrect: randPass,
+        pass: randPass2,
+        emailfixe: "luanadfreitas@gmail.com",
+        email: randEmailValid,
+        emailInvalid: randEmailInvalid,
         accountName: `Account - ${randName}`,
         description: randAccountDescription,
         valueInt: randValueInteger,
@@ -80,9 +89,10 @@ let seubarriga = {
         },
         dateMovInvalid: randDate(false), // date 12/6/2021
         datePayInvalid: randDate(false),        
-        dateMovValid: randDate(true), // date 12/06/2021
-        datePayValid: randDate(true),
-
+        //dateMovValid: randDate(true), // date 12/06/2021
+        //datePayValid: randDate(true),
+        dateMovValid: "05/06/2021", // date 12/06/2021
+        datePayValid: "06/06/2021", // date 12/06/2021
     }
 };
 
