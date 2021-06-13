@@ -1,4 +1,5 @@
 {   
+    "projectId": "5jzjfv",
     "baseUrl" : "http://localhost:3000",
     "e2e": {
         "baseUrl": "https://seubarriga.wcaquino.me/"
@@ -7,14 +8,15 @@
     "pluginsFile" : "tests/plugins/index.js",
     "supportFile":  "tests/support/index.js",
     "videosFolder" :"tests/videos",    
-    "video": "true",
+    "video": true,
     "videoCompression": 32,
-    "trashAssetsBeforeRuns" : "true",
+    "trashAssetsBeforeRuns" : true,
     "cypress/fixtures" : "tests/fixtures",    
-    "screenshotsFolder" : "tests/Screemshots",
+    "screenshotsFolder" : "tests/screemshots",
     "downloadsFolder" :  "tests/downloads",
     "viewportHeight": 1000,
     "viewportWidth": 1280,
     "screenshotOnRunFailure" : true,
-    "waitForAnimations" : true
+    "waitForAnimations" : true,
+    "testFiles": "**/*{e2e,api}/*.spec.{js,ts,jsx,tsx}"
 }
