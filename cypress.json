@@ -1,8 +1,20 @@
-{
-    "baseUrlSeuBarriga": "https://seubarriga.wcaquino.me/",
-    "baseUrlServeRest" : "http://localhost:3000",
-    "projectId": "7s5okt",
-    "integrationFolder": "cypress/tests",
+{   
+    "baseUrl" : "http://localhost:3000",
+    "e2e": {
+        "baseUrl": "https://seubarriga.wcaquino.me/"
+    },
+    "integrationFolder": "tests",
+    "pluginsFile" : "tests/plugins/index.js",
+    "supportFile":  "tests/support/index.js",
+    "videosFolder" :"tests/videos",    
+    "video": "true",
+    "videoCompression": 32,
+    "trashAssetsBeforeRuns" : "true",
+    "cypress/fixtures" : "tests/fixtures",    
+    "screenshotsFolder" : "tests/Screemshots",
+    "downloadsFolder" :  "tests/downloads",
     "viewportHeight": 1000,
-    "viewportWidth": 1280
+    "viewportWidth": 1280,
+    "screenshotOnRunFailure" : true,
+    "waitForAnimations" : true
 }

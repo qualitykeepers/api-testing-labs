@@ -8,12 +8,14 @@
   },
   "dependencies": {
     "cypress": "^7.5.0",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "faker": "^5.5.3"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "node_modules/.bin/cypress open "
+    "cypress:open": "node_modules/.bin/cypress open ",
+    "cypress:open:api": "cypress open --config pageLoadTimeout=30000,baseUrl=http://localhost:3000"
   },
   "repository": {
     "type": "git",
