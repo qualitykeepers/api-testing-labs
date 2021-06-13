@@ -15,7 +15,7 @@ var randValueFloat = faker.random.float();
 var randPayed = faker.random.boolean();
 var randMovType = faker.random.boolean();
 var randAccountDescription = faker.finance.accountName();
-var randPerson = faker.name.findName();
+var randPerson = [faker.name.findName(), faker.name.findName(),faker.name.findName()] ;
 
 
 // Thiis code was copy of Exemplo 4: Colocar zero antes de dias e meses com um algarismo and modified.
@@ -72,7 +72,12 @@ let seubarriga = {
         valueFloat: randValueFloat,
         payed: randPayed, // 0 - pago, 1- pendente
         movimentationType: randMovType, // 0 - receita, 1 - despesa
-        person: randPerson,
+        persons: {
+            personA : randPerson[0],
+            personB : randPerson[1],
+            personC : randPerson[2]
+
+        },
         dateMovInvalid: randDate(false), // date 12/6/2021
         datePayInvalid: randDate(false),        
         dateMovValid: randDate(true), // date 12/06/2021
