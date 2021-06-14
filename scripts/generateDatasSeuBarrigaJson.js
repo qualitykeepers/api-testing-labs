@@ -79,7 +79,7 @@ let seubarriga = {
         description: randAccountDescription,
         valueInt: randValueInteger,
         valueFloat: randValueFloat,
-        payed: randPayed, // 0 - pago, 1- pendente
+        payed: randPayed, // 1 - pago, 0- pendente
         movimentationType: randMovType, // 0 - receita, 1 - despesa
         persons: {
             personA : randPerson[0],
