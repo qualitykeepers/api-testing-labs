@@ -14,7 +14,7 @@ console.log(faker.commerce.productName)
 describe('Scenrio 5', () => {
 
     // CREATE AND to cart em can EDIT 
-    it('Insert a new Product and Edit, without correct token ', () => {
+    it('Insert a new Product and Edit', () => {
         cy.getTokenAuthorization('fulano@qa.com', 'teste')
             .then(tokenAuth => {
                 cy.request({
