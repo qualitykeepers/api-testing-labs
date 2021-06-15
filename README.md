@@ -153,7 +153,7 @@ obs: Os cenários com falha são resultado dos bugs comentados acima, especialme
 
 ## Dashboard Cypress
 - Link do convite https://dashboard.cypress.io/invitation/60423f1d-4dbb-43be-92c4-05c46dd88172
-![dashboard]()
+![dashboard](https://github.com/1freitas/w-automation-challenge/blob/main/docs/dashboardCypress.png)
 
 ## Fontes de Pesquisa para realizar o desafio
 - Filho da nuvem contribuindo com projeto opensource, Contribuindo para um projeto no GitHub (github actions + cypress)[link](https://www.youtube.com/watch?v=DHPlnp0k76U&t=320s)
