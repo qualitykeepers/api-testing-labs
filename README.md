@@ -96,7 +96,7 @@ Detalhes:
 - Existem alguns "bugs" a serem corrigidos para melhor a eficiência dos scripts de geração de fixture, e também limpesa do base de dados via frontend para independencia completa dos casos de testes. Tarefas para isso estão mapeadas no projeto Wchallenge que será continuado posteriormente, após essa entrega.
 - Para a codificação dos testes e gerenciamento do repositório git foi adotado [Github workflow](https://guides.github.com/introduction/flow/) para esse projeto de testes  após leituras de referências  [Luca Mezzzalira](https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/) e [Scott Chacon](http://scottchacon.com/2011/08/31/github-flow.html).
 
-## Proxímos Passos
+## Próximos Passos
 
 - Refatorar os teses atuais buscando aprimorar e estar aderente as boas práticas descritas (aqui)[https://docs.cypress.io/guides/references/best-practices].
   Alguns dos itens que foram "alvos" durante o desenvolvimento desse desavio:
@@ -153,6 +153,7 @@ obs: Os cenários com falha são resultado dos bugs comentados acima, especialme
 
 ## Dashboard Cypress
 - Link do convite https://dashboard.cypress.io/invitation/60423f1d-4dbb-43be-92c4-05c46dd88172
+![dashboard]()
 
 ## Fontes de Pesquisa para realizar o desafio
 - Filho da nuvem contribuindo com projeto opensource, Contribuindo para um projeto no GitHub (github actions + cypress)[link](https://www.youtube.com/watch?v=DHPlnp0k76U&t=320s)
