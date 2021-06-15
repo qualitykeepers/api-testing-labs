@@ -13,9 +13,10 @@ Este repositório contém a criação de testes automatizados dos tipos *e2e* e 
 ### Instalação do ambiente de teste
 
 Tecnologias utilizadas:
--node v14.17.0
--npm 6.14.13
--cypress 7.5.0
+
+- node v14.17.0
+- npm 6.14.13
+- cypress 7.5.0
 
 - Comandos para conferir versões:
 ```
