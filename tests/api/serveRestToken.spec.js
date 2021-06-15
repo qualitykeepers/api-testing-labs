@@ -2,15 +2,15 @@
 
 describe('Authorization and produt add', () => {
   it('Get Authorization', () => {
-    cy.getTokenAuthorization('fulano@qa.com','teste')
-      .then( tokenAuth => {
+    cy.getTokenAuthorization('fulano@qa.com', 'teste')
+      .then(tokenAuth => {
         cy.request({
-          url : '/produtos',
+          url: '/produtos',
           method: 'POST',
           headers: {
             Authorization: tokenAuth
           },
-          body:{
+          body: {
             "nome": "Cachorrinho",
             "preco": 1,
             "descricao": "O melhor amigo do mundo",
