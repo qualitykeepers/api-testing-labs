@@ -66,6 +66,7 @@ Para abrir a interface de execução do Cypress, execute no diretório do projet
 ├── package.json
 ├── package-lock.json
 ├── README.md
+├── docs
 ├── <font color="#5555FF"><b>scripts</b></font>
 └── <font color="#5555FF"><b>tests</b></font>
   <pre>
@@ -80,18 +81,25 @@ Para abrir a interface de execução do Cypress, execute no diretório do projet
    </pre>
 </pre>
 
-- Tests: Os testcases estão armazenados no diretório `tests/api` e `tests/e2d`, respectivamente testes verificando a camada de API (ServeRest) e teste end-to-end (seubarriga.wcaquino.me). Ambos os sistemas são dedicados ao aprendizado de programação e foram utilizados para criação de testes automatizados utilizando a ferramenta cypress.
+Principais diretórios e arquivos do projeto:
+- tests: Os testcases estão armazenados no diretório `tests/api` e `tests/e2e`, respectivamente testes verificando a camada de API (ServeRest) e teste end-to-end (seubarriga.wcaquino.me). Ambos os sistemas são dedicados ao aprendizado de programação e foram utilizados para criação de testes automatizados utilizando a ferramenta cypress.
+- packpage.json contém os comendos para execução do ambiente e dependencies do projeto.
 - cypress.json: [configuraçãoes padrão/default](https://docs.cypress.io/guides/references/configuration) do cypress foram alteradas, visto que este projeto é educativo e não existe a integração no mesmo repostório das aplicações que foram testadas. Sendo assim, foram adicionadas configurações e preferências de uso no arquivo cypress.json com esta finalidade.
+- Docs: contém um vídeo da exploração do sistemas seubarriga e imagens usadas no planejamento dos testes.
+- tests/Fixtures: contém arquivos de exemplo que são utilizados principalmente na suite de testes e2e;
+
+Detalhes:
+
 - Foram criados dos geradores de fixtures, gerando arquivos .json com dados randomizados utilizando a API [FAKE](https://fakercloud.com/api).
 - Foi criado um projeto para gerenciar as tarefas realizadas nesse desafio, chamado [WChallenge](https://github.com/1freitas/w-automation-challenge/projects/1)
 - Foram utilizadas fixtures na suite de testes e2e, para utilização na suite de api ainda requer ajustes, mapeado na tarefa.
 - Existem alguns "bugs" a serem corrigidos para melhor a eficiência dos scripts de geração de fixture, e também limpesa do base de dados via frontend para independencia completa dos casos de testes. Tarefas para isso estão mapeadas no projeto Wchallenge que será continuado posteriormente, após essa entrega.
-- Para a codificação dos testes e gerenciamento do repositório git foi adotado [Github workflow](https://guides.github.com/introduction/flow/) para esse projeto de testes  após leituras de referências  [Luca Mezzzalira](https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/) e [Scott Chacon](http://scottchacon.com/2011/08/31/github-flow.html)
+- Para a codificação dos testes e gerenciamento do repositório git foi adotado [Github workflow](https://guides.github.com/introduction/flow/) para esse projeto de testes  após leituras de referências  [Luca Mezzzalira](https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/) e [Scott Chacon](http://scottchacon.com/2011/08/31/github-flow.html).
 
 ## Proxímos Passos
 
 - Refatorar os teses atuais buscando aprimorar e estar aderente as boas práticas descritas (aqui)[https://docs.cypress.io/guides/references/best-practices].
-  Alguns dos itens que foram alvos durante o desenvolvimento desse desavio:
+  Alguns dos itens que foram "alvos" durante o desenvolvimento desse desavio:
   -  Assigning Return Values
   -  Using after or afterEach hooks
   -  Setting a global baseUrl
@@ -141,7 +149,7 @@ Spec                                              Tests  Passing  Failing  Pendi
     ✖  3 of 8 failed (38%)                      02:42       34       30        4        -        -
 
 ```
-obs: Os cenários com falha são resultado dos bugs comentados acima, especialmente o cenário seuBarrogaResumeExcluseAll.spec é uma ferramenta para limpesa da base antes de uma próxima rodada de testes, deve ser criado um command especfico para essa função.
+obs: Os cenários com falha são resultado dos bugs comentados acima, especialmente o cenário seuBarrogaResumeExcluseAll.spec é uma ferramenta para limpeza da base antes de uma próxima rodada de testes, deve ser criado um command especfico para essa função.
 
 ## Dashboard Cypress
 - Link do convite https://dashboard.cypress.io/invitation/60423f1d-4dbb-43be-92c4-05c46dd88172
@@ -149,5 +157,5 @@ obs: Os cenários com falha são resultado dos bugs comentados acima, especialme
 ## Fontes de Pesquisa para realizar o desafio
 - Filho da nuvem contribuindo com projeto opensource, Contribuindo para um projeto no GitHub (github actions + cypress)[link](https://www.youtube.com/watch?v=DHPlnp0k76U&t=320s)
 - AGILIZEI, Pair Testing #01 - [Integração contínua com GH Actions, Gitlab CI e Azure com Ernesto Barbosa](https://www.youtube.com/watch?v=tYIKfQ3lgk0)
-- Documentação Official so [Cypress](https://docs.cypress.io)
+- Documentação Official do [Cypress](https://docs.cypress.io)
 - Documentação Swagger da API [ServeRest](https://serverest.dev)
