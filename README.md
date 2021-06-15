@@ -148,5 +148,6 @@ obs: Os cenários com falha são resultado dos bugs comentados acima, especialme
 
 ## Fontes de Pesquisa para realizar o desafio
 - Filho da nuvem contribuindo com projeto opensource, Contribuindo para um projeto no GitHub (github actions + cypress)[link](https://www.youtube.com/watch?v=DHPlnp0k76U&t=320s)
-- AGILIZEI, Pair Testing #01 - Integração contínua com GH Actions, Gitlab CI e Azure [com Ernesto Barbosa](https://www.youtube.com/watch?v=tYIKfQ3lgk0)
+- AGILIZEI, Pair Testing #01 - [Integração contínua com GH Actions, Gitlab CI e Azure com Ernesto Barbosa](https://www.youtube.com/watch?v=tYIKfQ3lgk0)
 - Documentação Official so [Cypress](https://docs.cypress.io)
+- Documentação Swagger da API [ServeRest](https://serverest.dev)
