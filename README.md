@@ -26,3 +26,10 @@ https://seubarriga.wcaquino.me/
 ## Descrição dos testcases
 ### Suite de testes e2e  
 ### Suite de testes API
+
+
+dashboard https://dashboard.cypress.io/invitation/60423f1d-4dbb-43be-92c4-05c46dd88172
+
+
+Aaliyah.Balistreri@yahoo.com
+llf

@@ -11,6 +11,7 @@ describe('Scenario 2 - Create user with same data ', function() {
   afterEach( function (){
     cy.contains('Cadastrar').click('bottom')  
     cy.get('.alert').should('contain', 'Endereço de email já utilizado')
+    cy.screenshot() 
   })
 
   it('Cypress Test Case : Create User same e-mail ', function () {
@@ -40,6 +41,7 @@ describe('Scenario 1 - Create User ', function() {
     afterEach( function (){
       cy.contains('Cadastrar').click('bottom')  
       cy.get('.alert').should('contain', 'Usuário inserido com sucesso')
+      cy.screenshot() 
     })
   
     it('Cypress Test Case : Create User random data ', function () {
