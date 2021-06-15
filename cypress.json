@@ -1,12 +1,16 @@
 {   
     "projectId": "5jzjfv",
-    "baseUrl" : "http://localhost:3000",
+    "env": {
+        "email": "fulano@qa.com",
+        "password": "teste"
+    },
     "e2e": {
         "baseUrl": "https://seubarriga.wcaquino.me/"
     },
+
     "integrationFolder": "tests",
     "pluginsFile" : "tests/plugins/index.js",
-    "supportFile":  "tests/support/index.js",
+    "supportFile":  "tests/support/commands.js",
     "videosFolder" :"tests/videos",    
     "video": true,
     "videoCompression": 32,
